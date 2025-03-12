@@ -8,6 +8,7 @@ const Dashboard = () => {
             "name" : "Anubhav Pathak" ,
             email :"anubhavxyz@gmail.com",
             age: 20
+          
         },
         {
             id:2,
@@ -39,12 +40,12 @@ const Dashboard = () => {
     console.log("Users ArrY:",users);
   return (
     <div>
-        <h1 className='text-center p-2'>User Dashboard</h1>
+        <h1 className='text-center  text-5xl font-extrabold text-blue-700 shadow-md pt-7 p-6  rounded-lg'>User Dashboard</h1>
         <ul className='flex flex-wrap justify-center gap-6 bg-slate-400'>
             {
                 users.map((user) => {
                     return(
-                        <li>
+                        <li className='bg-white shadow-md rounded-lg p-6 w-72 text-center border border-grey-300 hover:shadow-xl transition-all'>
                             <UserCard user={user.id} name ={user.name} email={user.email} age={user.age}/>
 
                          </li>
